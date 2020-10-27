@@ -16,7 +16,7 @@ public class JoinDemo {
 		System.out.println("Main Thread executing: " + Thread.currentThread().getName());
 		t1.start();
 		try {
-			t1.join();
+			t1.join(1000);
 		} catch (InterruptedException ie) {
 			return;
 		}
